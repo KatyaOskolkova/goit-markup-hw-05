@@ -18,7 +18,7 @@
     <a class="link nav-logo" lang="en" href="">Web<span>Studio</span></a>
     <ul class="list header-list">
         <li class="header-item">
-            <a class="link header-link" href="">Студія</a>
+            <a class="link header-link current" href="">Студія</a>
         </li>
         <li class="header-item">
             <a class="link header-link" href="./portfolio.html">Портфоліо</a>
@@ -55,7 +55,7 @@
     <section class="hero">
         <div class="container bg-hero">
             <h1 class="hero-title">Ефективні рішення для<br>вашого бізнесу</h1>
-        <button class="link-button" type="button">Замовити послугу</button>
+        <button class="link-button" type="button" data-modal-open>Замовити послугу</button>
         </div>
     </section>
     <!--Advantages-->
@@ -119,25 +119,34 @@
         <h2 class="section-title">Чим ми займаємося</h2>
     <ul class="list activity-list">
         <li class="activity-item">
-            <img class="activity-img" 
+            <div class="activity-item-wrap">
+                <img class="activity-img" 
             src="./images/advantages-img-1.jpg" 
             alt="людина друкує код, який відображається на планшеті та комп'ютері" 
             width="370"
             >
+            <p class="activity-img-text">Десктопні додатки</p>
+            </div>
         </li>
         <li class="activity-item">
-            <img class="activity-img"
+            <div class="activity-item-wrap">
+                <img class="activity-img"
             src="./images/advantages-img-2.jpg" 
             alt="людина створює мобильну версію продукта на ноутбуці, тримаючи в руці мобільний телефон" 
             width="370"
             >
+            <p class="activity-img-text">Мобільні додатки</p>
+            </div>
         </li>
         <li class="activity-item">
-            <img class="activity-img"
+            <div class="activity-item-wrap">
+                <img class="activity-img"
             src="./images/advantages-img-3.jpg" 
             alt="людина тримає у руці планшет, на якому відображена кольорова палітра" 
             width="370"
             >
+            <p class="activity-img-text">Дизайнерські рішення</p>
+            </div>
         </li>
     </ul>
     </div>
@@ -346,11 +355,10 @@
     </ul>
     </div>
     </section>
- </main>
- <!-- Clients -->
-  <section class="section clients">
+<!-- Clients -->
+<section class="section clients">
     <div class="container">
-      <h2 class="section-title">Постійні клієнти</h2>   
+    <h2 class="section-title">Постійні клієнти</h2>   
     <ul class="list clients-list"> 
     <li class="clients-item">
         <a href="" class="clients-link">
@@ -397,6 +405,7 @@
 </ul>
     </div>
   </section>
+  </main>
  <!--Footer-->
 <footer class="section footer">
     <div class="container footer-container">
@@ -461,6 +470,17 @@
         </div>
 </div> 
 </footer>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+            <svg width="18" hight="18">
+                <use href="./images/icons.svg#modal-close"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+<script src="./js/modal.js">
+</script>
 </body>
 </html>
 <!-- закоммитить command/ -->
