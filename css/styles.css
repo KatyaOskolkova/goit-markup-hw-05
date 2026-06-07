@@ -227,6 +227,7 @@ vertical-align: middle;
 
 color: var(--btn-text-color);
 background-color: var(--btn-background-color);
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 
 min-width: 200px;
 min-height: 50px;
